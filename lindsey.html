@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You, Lindsey!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="SPOILER_20240816_22062.jpg" alt="Lindsey" class="lindsey-photo">
+            <img src="R (1).jpeg" alt="Hello Kitty" class="hello-kitty-pic">
+            <img src="R.jpeg" alt="Hello Kitty" class="hello-kitty-pic">
+            <img src="R33.png" alt="Hello Kitty" class="hello-kitty-pic">
+            <img src="OIP (1).jpeg" alt="Hello Kitty" class="hello-kitty-pic"> <!-- Fourth Hello Kitty image -->
+        </div>
+        <div class="hello-kitty">
+            <h1>I Love You, Lindsey!</h1>
+            <p>You are my everything. No words can express how much you mean to me.</p>
+            <p>Thank you for being the most amazing person in my life. 💖</p>
+            <button id="heartButton">Press the Heart 💖</button>
+            <div id="message"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('heartButton').addEventListener('click', function() {
+            const message = document.getElementById('message');
+            message.innerHTML = `<p>Every moment with you is a blessing. You are my world, my heart, my everything. I love you, Lindsey! 💖💖💖</p>`;
+            message.classList.add('show');
+        });
+    </script>
+</body>
+</html>

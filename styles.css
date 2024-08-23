@@ -1,0 +1,101 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url('hello-kitty-minimal-3840x2160-9938.png'); /* Replace with your local image file name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 209, 220, 0.8); /* Semi-transparent pink background */
+    border: 5px solid #ff99cc;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.lindsey-photo {
+    width: 300px; /* Increase this value for a wider image */
+    height: auto;
+    border-radius: 20px; /* Optional: Adjust this for a more rectangular shape */
+    border: 5px solid #ff66b2;
+}
+
+.hello-kitty-pic {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.hello-kitty-pic:nth-child(2) {
+    top: -20px;
+    left: -20px;
+}
+
+.hello-kitty-pic:nth-child(3) {
+    top: -20px;
+    right: -20px;
+}
+
+.hello-kitty-pic:nth-child(4) {
+    bottom: -20px;
+    left: -20px;
+}
+
+.hello-kitty-pic:nth-child(5) { /* Style for the fourth Hello Kitty image */
+    bottom: -20px;
+    right: -20px;
+}
+
+h1 {
+    color: #ff66b2;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #ff3385;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ff0066;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#message.show {
+    display: block;
+    opacity: 1;
+}
